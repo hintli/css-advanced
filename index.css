@@ -11,9 +11,16 @@
     width: 100px;
     height: 100px;
     background-color:red;
-    transition: width 2s;
+    transition: width 2s ease 0.2s,
+                background-color 3s ease 0.3s;
+    /* transition-property: width;
+    transition-delay: 2s;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0,1.48,.85,-0.48); */
 }
 
 .box:hover {
     width: 300px;
+    background-color: green;
 }
+
